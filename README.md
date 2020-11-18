@@ -22,12 +22,14 @@ At *Light Calibration* box, entry calibration data from stepped calibration wedg
 
 Name
 Width
-Year
+Year  
+
 **Path Creation**  
 
 Segments
 Width
-RUN
+RUN  
+
 **Ring Detection and Editing** 
 
 **Earlywood/Latewood Detection and Editing**  
