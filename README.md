@@ -15,7 +15,7 @@ At *Image Upload* box, browse and select a X-ray digitalized image from your com
 Afterwards image can be cropped to select the area of interest and rotated to led recent years or bark on the left of the image.
 
 **Light Calibration**  
-At *Light Calibration* box, entry Calibration Data from stepped calibration wedge directly filling available thickness and intensity boxes or loading it from a file from your computer.  Afterwards,regression algorithm can be chosen from `Local regression` or `Cubic smoothing spline`. Once those data are fulfilled, click on the `Plot` button. Therefore,steps and regression curve will be displayed from *XRing* (AÑADIR REPOSITORIO/CITA) based script.  
+At *Light Calibration* box, entry Calibration Data from stepped calibration wedge directly filling available thickness and intensity boxes or loading it from a file from your computer. Afterwards, regression algorithm can be chosen from `Local regression` or `Cubic smoothing spline`. Once those data are fulfilled, click on the `Plot` button. Therefore, steps and regression curve will be displayed from *XRing* (AÑADIR REPOSITORIO/CITA) based script.  
 
 ### Analysis
 
