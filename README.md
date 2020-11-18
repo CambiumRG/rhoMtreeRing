@@ -1,6 +1,6 @@
 # ρ-MtreeRing
 ## What is ρ-MtreeRing?
-ρ-MtreeRing is an Free Open Source Software for tree rings microdensity analysis on Shiny. It is developed from MtreeRing (AÑADIR REPOSITORIO).
+ρ-MtreeRing is an Free Open Source Software for tree rings microdensity analysis on Shiny. It is developed from MtreeRing (AÑADIR REPOSITORIO/CITA).
 
 ## Installing ρ-MtreeRing
 Download **app.R** file on your computer and launch it on R or RStudio. We highly recommend open Shiny interface on browser by clicking on the upper-left displayed option `Open in Browser`.
@@ -10,14 +10,17 @@ Download **app.R** file on your computer and launch it on R or RStudio. We highl
 ## Using ρ-MtreeRing
 
 ### Data Loading
-**Upload Sample Image**
-At Image Upload box, browse and select a X-ray digitalized image from your computer and click on *Load*.
+**Upload Sample Image**  
+At *Image Upload* box, browse and select a X-ray digitalized image from your computer and click on `Load`. Image will be displayed on the *Image Preview* box.
+Afterwards image can be cropped to select the area of interest and rotated to led recent years or bark on the left of the image.
 
-**Light Calibration**
+**Light Calibration**  
+At *Light Calibration* box, entry Calibration Data from stepped calibration wedge directly filling available thickness and intensity boxes or loading it from a file from your computer.  Afterwards, regression algorithm can be chosen from `Local regression` or `Cubic smoothing spline`. Once those data are fulfilled, click on the `Plot` button. Therefore,steps and regression curve will be displayed from *XRing* (AÑADIR REPOSITORIO/CITA) based script.  
 
 ### Analysis
 
 **Entry Sample Info**
+
 **Path Creation**
 
 ## References
