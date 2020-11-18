@@ -18,16 +18,20 @@ At *Light Calibration* box, entry calibration data from stepped calibration wedg
 
 ### Analysis
 
-**Entry Sample Info**
+**Entry Sample Info**  
+
 Name
 Width
 Year
-**Path Creation**
+**Path Creation**  
+
 Segments
 Width
 RUN
-**Ring Detection and Editing**  
+**Ring Detection and Editing** 
+
 **Earlywood/Latewood Detection and Editing**  
+
 
 ### Output
 ## References
