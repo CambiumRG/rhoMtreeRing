@@ -5,7 +5,9 @@
 ## Installing ρ-MtreeRing
 Download **app.R** file on your computer and launch it on R or RStudio. We highly recommend open Shiny interface on browser by clicking on the upper-left displayed option `Open in Browser`.
 
-![openinbrowser_highlighted](https://user-images.githubusercontent.com/74645623/99505962-c9e9e100-2981-11eb-9380-15daac5f7eab.png)
+
+![OpenInBrowser_](https://user-images.githubusercontent.com/74645623/99637329-fa468380-2a44-11eb-8695-56193a9c3a90.png)
+
 
 ## Using ρ-MtreeRing
 
