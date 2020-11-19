@@ -74,7 +74,7 @@ Volume 58,
 125644,
 ISSN 1125-7865,
 https://doi.org/10.1016/j.dendro.2019.125644.
-(http://www.sciencedirect.com/science/article/pii/S1125786519301006)
+
 
 [2] Filipe Campelo, Konrad Mayer, Michael Grabner,
 xRing—An R package to identify and measure tree-ring features using X-ray microdensity profiles,
@@ -84,5 +84,5 @@ Volume 53,
 Pages 17-21,
 ISSN 1125-7865,
 https://doi.org/10.1016/j.dendro.2018.11.002.
-(http://www.sciencedirect.com/science/article/pii/S112578651830095X)
+
 
