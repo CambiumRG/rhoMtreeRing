@@ -20,7 +20,7 @@ At *Image Upload* box, browse and select a X-ray digitalized image from your com
 
 
 **Light Calibration**  
-Fill available thickness and intensity boxes or load it from a file from your computer from stepped calibration wedge values. Afterwards, regression algorithm can be chosen from `Local regression` or `Cubic smoothing spline`. Once those data are fulfilled, click on the `Plot` button. Therefore, steps and regression curve will be displayed from *XRing* (AÑADIR REPOSITORIO/CITA) based script.  
+Fill available thickness and intensity boxes or load it from a file from your computer from stepped calibration wedge values. Afterwards, regression algorithm can be chosen from `Local regression` or `Cubic smoothing spline`. Once those data are fulfilled, click on the `Plot` button. Therefore, steps and regression curve will be displayed from *XRing* [2] based script.  
 
 ![LightCal](https://user-images.githubusercontent.com/74645623/99530486-a59dfc80-29a1-11eb-8be6-20ea8d29a8a6.png)
 
@@ -66,7 +66,7 @@ Analysed measures can be exported on various formats:
 
 ## References
 
-[1]: Jingning Shi, Wei Xiang, Qijing Liu, Sher Shah,
+[1] Jingning Shi, Wei Xiang, Qijing Liu, Sher Shah,
 MtreeRing: An R package with graphical user interface for automatic measurement of tree ring widths using image processing techniques,
 Dendrochronologia,
 Volume 58,
@@ -75,3 +75,14 @@ Volume 58,
 ISSN 1125-7865,
 https://doi.org/10.1016/j.dendro.2019.125644.
 (http://www.sciencedirect.com/science/article/pii/S1125786519301006)
+
+[2] Filipe Campelo, Konrad Mayer, Michael Grabner,
+xRing—An R package to identify and measure tree-ring features using X-ray microdensity profiles,
+Dendrochronologia,
+Volume 53,
+2019,
+Pages 17-21,
+ISSN 1125-7865,
+https://doi.org/10.1016/j.dendro.2018.11.002.
+(http://www.sciencedirect.com/science/article/pii/S112578651830095X)
+
