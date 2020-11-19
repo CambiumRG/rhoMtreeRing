@@ -28,7 +28,6 @@ Fill available thickness and intensity boxes or load it from a file from your co
 ### Analysis
 
 **Entry Sample Info**
-
 Complete Sample ID, Year of obtention. DPI and Sample thickness are required to obtain comparative values of ring width and density among different samples.  
 At *Path Info* box, you can select the desired path mode (pay attention to ring detection requirements) and number of pixels to extract density profile.
 
@@ -36,17 +35,14 @@ At *Path Info* box, you can select the desired path mode (pay attention to ring 
 
 
 **Path Creation**  
-
 In the *Main Window*, firstly select path limits by double-left-clicking on the left side (recent years) of the sample to place the beginning of the segment and continue delimiting path segments across the sample perpendicularly to ring limits. If you need to zoom in/out the sample, you can use the bars placed behind an on the left of the working window.
 Path width for density extraction can be changed throughout the entire analysis. 
 
 **Ring Detection and Editing** 
-
 Once the desired path is set, confirm the ring selection method options at *Detection Options* box and click on `Run Detection for Years`.
 If, unfortunately, automatic ring detection did not work properly, you can modify ring borders on `Ring Editing` mode. One click on the desired ring border set a new border, while you can select one or multiple ring borders by clicking and dragging to delete them by clicking on `Delete Border`.
 
 **Earlywood/Latewood Detection and Editing**  
-
 For intra-annual border detection click on `Run Detection for Early-Late Wood`. Furthermore, you can edit those borders in the same way that for ring borders by enablig `Edit Early/Late Wood` box in the `Ring Editing` mode.
 
 WARNING: In case you measure Earlywood/Latewood number of intra-annual borders must be equal to number of ring borders.
@@ -59,7 +55,6 @@ WARNING: In case you measure Earlywood/Latewood number of intra-annual borders m
 In this window you can complete various information about site, species, researcher or date.
 
 **Output**
-
 Analysed measures can be exported on various formats:  
 1.-*Comma Separated Values*. Containing density and ring measures.
 2.-*Excel format*. Containing density, ring measures and optional info.
