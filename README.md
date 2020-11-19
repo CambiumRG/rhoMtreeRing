@@ -35,7 +35,7 @@ At *Path Info* box, you can select the desired path mode (pay attention to ring 
 
 
 **Path Creation**  
-In the *Main Window*, firstly select path limits by double-left-clicking on the left side (recent years) of the sample to place the beginning of the segment and continue delimiting path segments across the sample perpendicularly to ring limits. If you need to zoom in/out the sample, you can use the bars placed behind an on the left of the working window.
+In the *Main Window*, firstly select path limits by double-left-clicking on the left side (recent years) of the sample to place the beginning of the segment. Then, continue delimiting path segments across the sample perpendicularly to ring limits. If you need to zoom in/out the sample, you can use the corresponding bars placed behind an on the left of the working window.
 Path width for density extraction can be changed throughout the entire analysis. 
 
 **Ring Detection and Editing** 
