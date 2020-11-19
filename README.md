@@ -16,7 +16,9 @@ Download **app.R** file on your computer and launch it on R or RStudio. We highl
 **Upload Sample Image**  
 At *Image Upload* box, browse and select a X-ray digitalized image from your computer and click on `Load`. Image will be displayed on the *Image Preview* box and can be cropped to select the area of interest or rotated to led recent years or bark on the left of the image.
 
-![ImagePrev](https://user-images.githubusercontent.com/74645623/99530335-75eef480-29a1-11eb-964d-cd6ebb58b9bb.png)
+<p align="center">
+  <img width="460" height="300" src=![ImagePrev](https://user-images.githubusercontent.com/74645623/99530335-75eef480-29a1-11eb-964d-cd6ebb58b9bb.png)>
+</p>
 
 
 **Light Calibration**  
