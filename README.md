@@ -5,8 +5,9 @@
 ## Installing ρ-MtreeRing
 Download **app.R** file on your computer and launch it on R or RStudio. We highly recommend open Shiny interface on browser by clicking on the upper-left displayed option `Open in Browser`.
 
-
-![OpenInBrowser_](https://user-images.githubusercontent.com/74645623/99637329-fa468380-2a44-11eb-8695-56193a9c3a90.png)
+<p align="center">
+  <img width="900" height="205" src="https://user-images.githubusercontent.com/74645623/99637329-fa468380-2a44-11eb-8695-56193a9c3a90.png">
+</p>
 
 
 ## Using ρ-MtreeRing
@@ -16,10 +17,7 @@ Download **app.R** file on your computer and launch it on R or RStudio. We highl
 **Upload Sample Image**  
 At *Image Upload* box, browse and select a X-ray digitalized image from your computer and click on `Load`. Image will be displayed on the *Image Preview* box and can be cropped to select the area of interest or rotated to led recent years or bark on the left of the image.
 
-<p align="center">
-  <img width="460" height="300" src=![ImagePrev](https://user-images.githubusercontent.com/74645623/99530335-75eef480-29a1-11eb-964d-cd6ebb58b9bb.png)>
-</p>
-
+![ImagePrev](https://user-images.githubusercontent.com/74645623/99530335-75eef480-29a1-11eb-964d-cd6ebb58b9bb.png)
 
 **Light Calibration**  
 Fill available thickness and intensity boxes or load it from a file from your computer from stepped calibration wedge values. Afterwards, regression algorithm can be chosen from `Local regression` or `Cubic smoothing spline`. Once those data are fulfilled, click on the `Plot` button. Therefore, steps and regression curve will be displayed from *XRing* [2] based script.  
