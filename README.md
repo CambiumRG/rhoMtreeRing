@@ -25,7 +25,7 @@ Fill available thickness and intensity boxes or load it from a file from your co
 ![LightCal](https://user-images.githubusercontent.com/74645623/99530486-a59dfc80-29a1-11eb-8be6-20ea8d29a8a6.png)
 
 
-### Analysis
+### Density Analysis
 
 **Entry Sample Info**
 Complete Sample ID, Year of obtention. DPI and Sample thickness are required to obtain comparative values of ring width and density among different samples.  
@@ -45,7 +45,7 @@ If, unfortunately, automatic ring detection did not work properly, you can modif
 **Earlywood/Latewood Detection and Editing**  
 For intra-annual border detection click on `Run Detection for Early-Late Wood`. Furthermore, you can edit those borders in the same way that for ring borders by enablig `Edit Early/Late Wood` box in the `Ring Editing` mode.
 
-WARNING: In case you measure Earlywood/Latewood number of intra-annual borders must be equal to number of ring borders.
+*WARNING*: In case you measure Earlywood/Latewood number of intra-annual borders must be equal to number of ring borders.
 
 ![MainInfo](https://user-images.githubusercontent.com/74645623/99530533-b9e1f980-29a1-11eb-9864-9c6589f7956d.png)
 
