@@ -1,6 +1,6 @@
-# ρ-MtreeRing
+# ρ-MtreeRing  
 ## What is ρ-MtreeRing?
-ρ-MtreeRing is an Free Open Source Software for tree rings microdensity analysis on Shiny based on MtreeRing [1].
+ρ-MtreeRing [1] is an Free Open Source Software for tree rings microdensity analysis on Shiny based on MtreeRing [2].
 
 ## Installing ρ-MtreeRing
 Download **app.R** file on your computer and launch it on R or RStudio. We highly recommend open Shiny interface on browser by clicking on the upper-left displayed option `Open in Browser`.
@@ -20,7 +20,7 @@ At *Image Upload* box, browse and select a X-ray digitalized image from your com
 ![ImagePrev](https://user-images.githubusercontent.com/74645623/99530335-75eef480-29a1-11eb-964d-cd6ebb58b9bb.png)
 
 **Light Calibration**  
-Fill available thickness and intensity boxes or load it from a file from your computer from stepped calibration wedge values. Afterwards, regression algorithm can be chosen from `Local regression` or `Cubic smoothing spline`. Once those data are fulfilled, click on the `Plot` button. Therefore, steps and regression curve will be displayed from *XRing* [2] based script.  
+Fill available thickness and intensity boxes or load it from a file from your computer from stepped calibration wedge values. Afterwards, regression algorithm can be chosen from `Local regression` or `Cubic smoothing spline`. Once those data are fulfilled, click on the `Plot` button. Therefore, steps and regression curve will be displayed from *XRing* [3] based script.  
 
 ![LightCal](https://user-images.githubusercontent.com/74645623/99530486-a59dfc80-29a1-11eb-8be6-20ea8d29a8a6.png)
 
@@ -45,7 +45,7 @@ If, unfortunately, automatic ring detection did not work properly, you can modif
 **Earlywood/Latewood Detection and Editing**  
 For intra-annual border detection click on `Run Detection for Early-Late Wood`. Furthermore, you can edit those borders in the same way that for ring borders by enablig `Edit Early/Late Wood` box in the `Ring Editing` mode.
 
-*WARNING*: In case you measure Earlywood/Latewood number of intra-annual borders must be equal to number of ring borders.
+*WARNING*: In case you measure Earlywood/Latewood, number of intra-annual borders must be equal to number of ring borders.
 
 ![MainInfo](https://user-images.githubusercontent.com/74645623/99530533-b9e1f980-29a1-11eb-9864-9c6589f7956d.png)
 
@@ -66,7 +66,9 @@ Analysed measures can be exported on various formats:
 
 ## References
 
-[1] Jingning Shi, Wei Xiang, Qijing Liu, Sher Shah,
+[1] REFERENCE
+
+[2] Jingning Shi, Wei Xiang, Qijing Liu, Sher Shah,
 MtreeRing: An R package with graphical user interface for automatic measurement of tree ring widths using image processing techniques,
 Dendrochronologia,
 Volume 58,
@@ -75,8 +77,7 @@ Volume 58,
 ISSN 1125-7865,
 https://doi.org/10.1016/j.dendro.2019.125644.
 
-
-[2] Filipe Campelo, Konrad Mayer, Michael Grabner,
+[3] Filipe Campelo, Konrad Mayer, Michael Grabner,
 xRing—An R package to identify and measure tree-ring features using X-ray microdensity profiles,
 Dendrochronologia,
 Volume 53,
