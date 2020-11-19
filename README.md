@@ -27,7 +27,8 @@ Fill available thickness and intensity boxes or load it from a file from your co
 
 ### Analysis
 
-**Entry Sample Info**  
+**Entry Sample Info**
+
 Complete Sample ID, Year of obtention. DPI and Sample thickness are required to obtain comparative values of ring width and density among different samples.  
 At *Path Info* box, you can select the desired path mode (pay attention to ring detection requirements) and number of pixels to extract density profile.
 
@@ -54,7 +55,7 @@ WARNING: In case you measure Earlywood/Latewood number of intra-annual borders m
 
 ### Results
 
-**Optional Sample Info**
+**Optional Sample Info**  
 In this window you can complete various information about site, species, researcher or date.
 
 **Output**
