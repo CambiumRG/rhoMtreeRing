@@ -27,7 +27,7 @@ Fill available thickness and intensity boxes or load it from a file from your co
 
 ### Density Analysis
 
-**Entry Sample Info**
+**Entry Sample Info**  
 Complete Sample ID, Year of obtention. DPI and Sample thickness are required to obtain comparative values of ring width and density among different samples.  
 At *Path Info* box, you can select the desired path mode (pay attention to ring detection requirements) and number of pixels to extract density profile.
 
@@ -54,7 +54,7 @@ For intra-annual border detection click on `Run Detection for Early-Late Wood`. 
 **Optional Sample Info**  
 In this window you can complete various information about site, species, researcher or date.
 
-**Output**
+**Output**  
 Analysed measures can be exported on various formats:  
 1.-*Comma Separated Values*. Containing density and ring measures.
 2.-*Excel format*. Containing density, ring measures and optional info.
