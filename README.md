@@ -11,7 +11,8 @@ Download **app.R** file on your computer and launch it on R or RStudio. We highl
 
 ## Using ρ-MtreeRing
 
-### Data Loading
+### Data Loading  
+
 **Upload Sample Image**  
 At *Image Upload* box, browse and select a X-ray digitalized image from your computer and click on `Load`. Image will be displayed on the *Image Preview* box and can be cropped to select the area of interest or rotated to led recent years or bark on the left of the image.
 
@@ -27,39 +28,44 @@ Fill available thickness and intensity boxes or load it from a file from your co
 ### Analysis
 
 **Entry Sample Info**  
-Complete Sample ID, Year of obtention. DPI and Sample thickness are required to obtain comparative values of ring width and density among different samples.
-
-At *Path Info* box you can select the desired path mode (pay attention to ring detection requirements) and number of pixels selected to extract density profile.
+Complete Sample ID, Year of obtention. DPI and Sample thickness are required to obtain comparative values of ring width and density among different samples.  
+At *Path Info* box, you can select the desired path mode (pay attention to ring detection requirements) and number of pixels to extract density profile.
 
 ![SampleInfo](https://user-images.githubusercontent.com/74645623/99530605-d5e59b00-29a1-11eb-8b7f-19e7480c6438.png)
 
 
 **Path Creation**  
 
-In the *Main Window*, firstly select path limits by double-left-clicking on the left side (recent years) of the sample to place the beginning of the segment and continue delimiting path segments across the sample perpendicularly to ring limits.
+In the *Main Window*, firstly select path limits by double-left-clicking on the left side (recent years) of the sample to place the beginning of the segment and continue delimiting path segments across the sample perpendicularly to ring limits. If you need to zoom in/out the sample, you can use the bars placed behind an on the left of the working window.
 Path width for density extraction can be changed throughout the entire analysis. 
 
 **Ring Detection and Editing** 
 
-Once path is set, confirm the ring selection method options at *Detection Options* box and click on `Ring Detection`.
-If, unfortunately, automatic ring detection did not work properly, you can modify ring borders on `Ring Editing` mode. One click on the desired border set a new border, while you can select one or multiple ring borders by clicking and dragging and delete them clicking on `Delete Border`.
-
+Once the desired path is set, confirm the ring selection method options at *Detection Options* box and click on `Run Detection for Years`.
+If, unfortunately, automatic ring detection did not work properly, you can modify ring borders on `Ring Editing` mode. One click on the desired ring border set a new border, while you can select one or multiple ring borders by clicking and dragging to delete them by clicking on `Delete Border`.
 
 **Earlywood/Latewood Detection and Editing**  
 
+For intra-annual border detection click on `Run Detection for Early-Late Wood`. Furthermore, you can edit those borders in the same way that for ring borders by enablig `Edit Early/Late Wood` box in the `Ring Editing` mode.
+
+WARNING: In case you measure Earlywood/Latewood number of intra-annual borders must be equal to number of ring borders.
 
 ![MainInfo](https://user-images.githubusercontent.com/74645623/99530533-b9e1f980-29a1-11eb-9864-9c6589f7956d.png)
 
-
-
-
-
-
 ### Results
 
+**Optional Sample Info**
+In this window you can complete various information about site, species, researcher or date.
+
+**Output**
+
+Analysed measures can be exported on various formats:  
+1.-*Comma Separated Values*. Containing density and ring measures.
+2.-*Excel format*. Containing density, ring measures and optional info.
+3.-*RWL*. Containing ring measures.
+4.-*Project at RDS format*. Containing data to reopen the project by loading it further on for corrections. 
+
 ![Results](https://user-images.githubusercontent.com/74645623/99530723-f7df1d80-29a1-11eb-9e20-5035f0ad3c59.png)
-
-
 
 
 ## References
