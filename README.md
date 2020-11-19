@@ -1,6 +1,6 @@
 # ρ-MtreeRing
 ## What is ρ-MtreeRing?
-ρ-MtreeRing is an Free Open Source Software for tree rings microdensity analysis on Shiny. It is developed from MtreeRing [1].
+ρ-MtreeRing is an Free Open Source Software for tree rings microdensity analysis on Shiny based on MtreeRing [1].
 
 ## Installing ρ-MtreeRing
 Download **app.R** file on your computer and launch it on R or RStudio. We highly recommend open Shiny interface on browser by clicking on the upper-left displayed option `Open in Browser`.
