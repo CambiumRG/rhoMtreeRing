@@ -1,6 +1,6 @@
 # ρ-MtreeRing  
 ## What is ρ-MtreeRing?
-ρ-MtreeRing [[1](#references)] is an Free Open Source Software under [GLP-3 license](https://cran.r-project.org/web/licenses/GPL-3) for tree rings microdensity analysis on Shiny based on MtreeRing [2].
+ρ-MtreeRing [[1](#references)] is an Free Open Source Software under [GLP-3 license](https://cran.r-project.org/web/licenses/GPL-3) for tree rings microdensity analysis on Shiny based on MtreeRing [[2](#references)].
 
 ## Installing ρ-MtreeRing
 Download **app.R** file on your computer and launch it on R or RStudio. We highly recommend open Shiny interface on browser by clicking on the upper-left displayed option `Open in Browser`.
@@ -20,7 +20,7 @@ At *Image Upload* box, browse and select a X-ray digitalized image from your com
 ![ImagePrev](https://user-images.githubusercontent.com/74645623/99530335-75eef480-29a1-11eb-964d-cd6ebb58b9bb.png)
 
 **Light Calibration**  
-Fill available thickness and intensity boxes or load it from a file from your computer from stepped calibration wedge values. Afterwards, regression algorithm can be chosen from `Local regression` or `Cubic smoothing spline`. Once those data are fulfilled, click on the `Plot` button. Therefore, steps and regression curve will be displayed from *XRing* [3] based script.  
+Fill available thickness and intensity boxes or load it from a file from your computer from stepped calibration wedge values. Afterwards, regression algorithm can be chosen from `Local regression` or `Cubic smoothing spline`. Once those data are fulfilled, click on the `Plot` button. Therefore, steps and regression curve will be displayed from *XRing* [[3](#references)] based script.  
 
 ![LightCal](https://user-images.githubusercontent.com/74645623/99530486-a59dfc80-29a1-11eb-8be6-20ea8d29a8a6.png)
 
@@ -66,7 +66,7 @@ Analysed measures can be exported on various formats:
 
 ## References
 
-[[1](#1)] REFERENCE
+[1] REFERENCE
 
 [2] Jingning Shi, Wei Xiang, Qijing Liu, Sher Shah,
 MtreeRing: An R package with graphical user interface for automatic measurement of tree ring widths using image processing techniques,
