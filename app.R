@@ -1,7 +1,7 @@
 packages = c("shiny", "shinyjs", "shinyWidgets", "shinydashboard", 
              "shinyMatrix", "shinyFiles", "MtreeRing","dplR","measuRing",
              "rgdal", "raster", "zip", "testthat", "magrittr", "magick", 
-             "imager", "spatstat", "openxlsx")
+             "imager", "spatstat", "dplyr", "openxlsx")
 package.check <- lapply(
   packages,
   FUN = function(x) {
@@ -12,30 +12,10 @@ package.check <- lapply(
   }
 )
 
-library(shiny)
-library(shinyjs)
-library(shinyWidgets)
-library(shinydashboard)
-library(shinyMatrix)
-library(shinyFiles)
-library(MtreeRing)
-library(rgdal)
-library(raster)
-library(zip)
-library(testthat)
-library(magrittr)
-library(magick)
-library(imager)
-library(dplR)
-library(spatstat)
-library(measuRing)
-library(dplyr)
-library(openxlsx)
-
 # Run the application
 createUI <- function()
 {
-  shiny.title <- dashboardHeader(title = 'ρ-MtreeRing')
+  shiny.title <- dashboardHeader(title = 'ÏMtreeRing')
   shiny.sider <- dashboardSidebar(
     sidebarMenu(
       menuItem('Data Loading',tabName = 'input_pre', 
