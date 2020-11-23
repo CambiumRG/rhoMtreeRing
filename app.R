@@ -15,7 +15,7 @@ package.check <- lapply(
 # Run the application
 createUI <- function()
 {
-  shiny.title <- dashboardHeader(title = 'ÏMtreeRing')
+  shiny.title <- dashboardHeader(title = 'ρ-MtreeRing')
   shiny.sider <- dashboardSidebar(
     sidebarMenu(
       menuItem('Data Loading',tabName = 'input_pre', 
