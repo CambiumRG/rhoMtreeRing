@@ -1268,6 +1268,7 @@ createServer <- function(input, output, session)
     return(tdata)  
   }
   rotateImg <- function(tdata, degree) {
+    # Function to rotate image by 90, 180 and 270 degrees
     rotate <- function(x) t(apply(x, 2, rev))
     if (degree == 90) {
       tdata <- rotate(tdata)
@@ -1283,6 +1284,7 @@ createServer <- function(input, output, session)
   
   estimate_coords_path <- function(path.info.x, path.info.y, x.coords, 
                                    y.coords, profile.path.coord.x) {
+    # Function to calculate actual coordinates in a multi-segment path
     j.init <- 1
     coords <- c()
     y.coords <- y.coords[order(x.coords)]
@@ -2728,6 +2730,8 @@ createServer <- function(input, output, session)
   
   f.elrho <- function(df.yrho, profile, elwood, path.info, 
                       profile.path.coord.x) {
+    # Function to estimate earlywood density statistics
+    
     rho.lw.mean <- c(NA)
     rho.lw.std <- c(NA)
     rho.lw.max <- c(NA)
@@ -2743,12 +2747,20 @@ createServer <- function(input, output, session)
                                      df.yrho$y, profile.path.coord.x)
     elwood.x.coords <- estimate_coords_path(path.info$x, path.info$y, elwood$x, 
                                             elwood$y, profile.path.coord.x)
+    original.x.coords = df.yrho$x
+    original.x.coords <- sort(original.x.coords)
+    
     for (row in 2:nrow(df.yrho)) {
       x1 <- x.coords[row - 1]
       x2 <- x.coords[row]
+      
+      original.x1 <- original.x.coords[row - 1]
+      original.x2 <- original.x.coords[row]
+
       el.point <- elwood.x.coords[(elwood.x.coords >= x1) & 
                                     (elwood.x.coords <= x2)]
-      original.el.point <- elwood$x[(elwood['x'] >= x1) & (elwood['x'] <= x2)]
+      original.el.point <- elwood$x[(elwood['x'] >= original.x1) & 
+                                      (elwood['x'] <= original.x2)]
       
       if (length(el.point) == 1) {
         elw.x <- append(elw.x, original.el.point)
@@ -2854,7 +2866,7 @@ createServer <- function(input, output, session)
                         path.info, calibration_profile$coords.x)
           if (length(df$elw.x[is.na(df$elw.x)]) > 1) {
             showNotification(paste("WARNING: Skipping duplicate or missing 
-                                   early-late wood borders."), duration = 5)
+                                   earlylate wood borders."), duration = 5)
           }
         }
       }
