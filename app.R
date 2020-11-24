@@ -848,7 +848,7 @@ createServer <- function(input, output, session)
     p.y <- path.info$y - crop.offset.xy$y
     p.type <- path.info$type
     p.hor <- path.info$horizontal
-    # dpi <- path.info$dpi TODO: check
+    
     len <- length(p.x)
     # plot path
     if (len == 1)
@@ -922,7 +922,7 @@ createServer <- function(input, output, session)
     by <- by[order(bx)]
     bz <- bz[order(bx)]
     bx <- sort(bx)
-    dp <- dpi/25.4 # TODO: Check 
+    dp <- dpi/25.4
     
     lenbx <- length(bx)
     dx <- diff(bx)
@@ -965,7 +965,7 @@ createServer <- function(input, output, session)
   }
   
   crop_path <- function(img, px, py, pixelspath) {
-    py <- dim(img)[1] - py # axis goes in different direction
+    py <- dim(img)[1] - py # axis goes in opposite direction
     points <- cbind(x = px, y = py)
     angles <- vector(mode = "list", length = length(px) - 1)
     
@@ -1041,13 +1041,13 @@ createServer <- function(input, output, session)
     default.canny, canny.t1, canny.t2, canny.adjust, canny.smoothing, origin
   )
   {   
-    dp <- dpi/25.4 # TODO:check
+    dp <- dpi/25.4
     dimt <- dim(img)
     dimcol <- dimt[2]
     dimrow <- dimt[1]
     
-    struc.ele1 <- calc.se(struc.ele1, dpi, 1) # TODO:check
-    struc.ele2 <- calc.se(struc.ele2, dpi, 2) # TODO:check
+    struc.ele1 <- calc.se(struc.ele1, dpi, 1)
+    struc.ele2 <- calc.se(struc.ele2, dpi, 2)
     
     # X direction
     pxmin <- min(px) - round(1.5 * struc.ele2[1])
@@ -1380,7 +1380,7 @@ createServer <- function(input, output, session)
     path.info$type <- NULL
     path.info$ID <- NULL
     path.info$horizontal <- NULL
-    path.info$dpi <- NULL # TODO: check
+    path.info$dpi <- NULL
     path.info$max <- NULL
     path.info$df <- NULL
     path.info$num.segments <- NULL
@@ -1443,7 +1443,7 @@ createServer <- function(input, output, session)
     path.info$type <- NULL
     path.info$ID <- NULL
     path.info$horizontal <- NULL
-    path.info$dpi <- NULL # TODO:check
+    path.info$dpi <- NULL
     path.info$max <- NULL
     path.info$df <- NULL
     # Wood Info
@@ -1607,7 +1607,7 @@ createServer <- function(input, output, session)
     path.info$type <- f['path.info.type'][[1]]
     path.info$ID <- f['path.info.ID'][[1]]
     path.info$horizontal <- f['path.info.horizontal'][[1]]
-    path.info$dpi <- f['path.info.dpi'][[1]] # TODO:check
+    path.info$dpi <- f['path.info.dpi'][[1]]
     path.info$max <- f['path.info.max'][[1]]
     path.info$df <- f['path.info.df'][[1]]
     rw.dataframe$data <- f['rw.dataframe.data'][[1]]
@@ -1629,7 +1629,7 @@ createServer <- function(input, output, session)
     path.info$num.segments <- f['num.seg'][[1]]
     tuid <- f['tuid'][[1]]
     sample.yr <- f['sample.yr'][[1]]
-    dpi <- f['dpi'][[1]] # TODO:check
+    dpi <- f['dpi'][[1]] 
     sample.thickness <- f['sample.thickness'][[1]]
     sel.sin.mul <- f['sel.sin.mul'][[1]]
     num.seg <- f['num.seg'][[1]]
@@ -1743,7 +1743,7 @@ createServer <- function(input, output, session)
     path.info$type <- NULL
     path.info$ID <- NULL
     path.info$horizontal <- NULL
-    path.info$dpi <- NULL # TODO:check
+    path.info$dpi <- NULL
     path.info$max <- NULL
     path.info$df <- NULL
     # Wood Info
@@ -1815,7 +1815,7 @@ createServer <- function(input, output, session)
     path.info$type <- NULL
     path.info$ID <- NULL
     path.info$horizontal <- NULL
-    path.info$dpi <- NULL # TODO:check
+    path.info$dpi <- NULL
     path.info$max <- NULL
     path.info$df <- NULL
     rw.dataframe$data <- NULL
@@ -1825,7 +1825,7 @@ createServer <- function(input, output, session)
     if (!is.null(plot1_brush)) {
       plot1_ranges$x <- c(round(plot1_brush$xmin), round(plot1_brush$xmax))
       plot1_ranges$y <- c(round(plot1_brush$ymin), round(plot1_brush$ymax))
-      #0730
+      
       dimt <- dim(img.file$data) 
       dimcol <- dimt[2]
       dimrow <- dimt[1]
@@ -1897,7 +1897,7 @@ createServer <- function(input, output, session)
     }
   })
   
-  # 0803 delete a segment
+  # Delete a segment
   observeEvent(input$rm_last, {
     if (is.null(path.info$x)) {
       et <- 'The path to be removed does not exist.'
@@ -1913,7 +1913,7 @@ createServer <- function(input, output, session)
       path.info$type <- NULL
       path.info$ID <- NULL
       path.info$horizontal <- NULL
-      path.info$dpi <- NULL # TODO:check
+      path.info$dpi <- NULL
       path.info$max <- NULL
       calibration_profile$data <- NULL
       plot2_ranges$x <- NULL
@@ -1948,7 +1948,7 @@ createServer <- function(input, output, session)
       return()
     }
   })
-  # 0803 delete all segments
+  # Delete all segments
   observeEvent(input$rm_all, {
     if (is.null(path.info$x)) {
       et <- 'The path to be removed does not exist.'
@@ -1964,7 +1964,7 @@ createServer <- function(input, output, session)
       path.info$type <- NULL
       path.info$ID <- NULL
       path.info$horizontal <- NULL
-      path.info$dpi <- NULL # TODO:check
+      path.info$dpi <- NULL
       path.info$max <- NULL
       df.loc$data <- NULL
       df.loc$ID <- NULL
@@ -1984,7 +1984,7 @@ createServer <- function(input, output, session)
     }
   })
   
-  # del border points
+  # Delete border points
   observeEvent(input$rm_all_border, {
     if (input$edit_wood) {
       if (is.null(el_wood.loc$data)) {
@@ -2019,7 +2019,7 @@ createServer <- function(input, output, session)
     }
   })
   
-  # record slider info
+  # Record slider info
   observeEvent(input$img_ver, {
     if (is.null(img.file.crop$data))
       return()
@@ -2044,13 +2044,13 @@ createServer <- function(input, output, session)
     crop.offset.xy$y <- dimrow - round(input$img_ver[2]*dimrow/1000)
   })
   
-  # record mouse position to generate a preview path
+  # Record mouse position to generate a preview path
   observeEvent(input$plot2_hover, {
     hover.xy$x <- input$plot2_hover$x
     hover.xy$y <- input$plot2_hover$y
   })
   
-  ## create path with mouse clicks
+  ## Create path with mouse clicks
   observeEvent(input$plot2_dblclick, 
                {
                  if (input$sel_mode != "sel_path")
@@ -2122,7 +2122,7 @@ createServer <- function(input, output, session)
                    return() 
                  }
                  py <- round(input$plot2_dblclick$y + crop.offset.xy$y)
-                 # dp <- dpi/25.4 # TODO:check
+                 
                  hor <- input$hor_path
                  if (length(path.info$x) >= 1) {
                    if (path.info$horizontal) {
@@ -2142,7 +2142,7 @@ createServer <- function(input, output, session)
                    path.info$type <- input$sel_sin_mul
                    path.info$ID <- seriesID
                    path.info$horizontal <- input$hor_path
-                   path.info$dpi <- dpi # TODO: check
+                   path.info$dpi <- dpi
                    path.info$max <- input$num_seg + 1
                    df.loc$ID <- input$tuid
                  }
@@ -2186,7 +2186,7 @@ createServer <- function(input, output, session)
     }
     
     dpi <- path.info$dpi
-    # dp <- dpi/25.4 # TODO:check
+    
     ph <- path.info$horizontal
     path.df <- path.info$df
     px <- path.info$x
@@ -2314,7 +2314,7 @@ createServer <- function(input, output, session)
         density_data <- predict(calibration.model$data, data) 
         density_data <- density_data$y / sample_thickness
       }
-      # Replacing NAN values
+      # Replacing NAN values by min and max values
       density_data[data > calibration.values.min_max$max.value] <- 
         calibration.density.min_max$max.value
       density_data[data < calibration.values.min_max$min.value] <- 
@@ -2335,7 +2335,7 @@ createServer <- function(input, output, session)
       return()
     }
     
-    dpi <- path.info$dpi # TODO: check
+    dpi <- path.info$dpi
     dp <- dpi/25.4
     ph <- path.info$horizontal
     path.df <- path.info$df
@@ -2583,7 +2583,7 @@ createServer <- function(input, output, session)
   output$profile_edit <- renderPlot({
     bor.color <- input$border.color
     py <- path.info$y
-    dpi <- path.info$dpi # TODO: check
+    dpi <- path.info$dpi
     img <- img.file.crop$data
     pixelspath <- input$pixelspath
     path.hor <- path.info$horizontal
@@ -2765,7 +2765,7 @@ createServer <- function(input, output, session)
       if (length(el.point) == 1) {
         elw.x <- append(elw.x, original.el.point)
         elw.y <- append(elw.y, elwood$y[(elwood['x'] == original.el.point)])
-        # late wood
+        # early-late wood
         tdata <- profile[x1:(el.point - 1)]
         p95 <- quantile(tdata, 0.95, na.rm = TRUE)
         p05 <- quantile(tdata, 0.05, na.rm = TRUE)
