@@ -86,7 +86,7 @@ Analysed measures can be exported on various formats:
 
 [1] M. Garcia-Hidalgo, A. Garcia-Pedrero, C. Caetano-Sánchez, M. Gomez-España, M. Lillo-Saavedra, J.M. Olano.
 "ρ-MtreeRing: A graphical user interface for X-ray microdensity analysis". 
-Submitted to Dendrochronologia Journal.
+Submitted.
 
 [2] Jingning Shi, Wei Xiang, Qijing Liu, Sher Shah.
 "MtreeRing: An R package with graphical user interface for automatic measurement of tree ring widths using image processing techniques".
