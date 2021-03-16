@@ -22,14 +22,14 @@ shiny::runApp()
 ### Data Loading  
 
 **Upload Sample Image**  
-At *Image Upload* box, browse and select a X-ray digitalized image from your computer and click on `Load`. Image will be displayed on the *Image Preview* box and can be cropped to select the area of interest or rotated to led recent years or bark on the left of the image.
+At *Image Upload* box, browse and select a X-ray digitalized image from your computer and click on `Load`. Image will be displayed on the *Image Preview* box and can be cropped to select the area of interest or rotated to led recent years (bark side) on the left of the image.
 
 <p align="center">
   <img src="screenshots/img_02.png">
 </p>
 
 **Light Calibration**  
-Fill available thickness and intensity boxes or load it from a file from your computer from stepped calibration wedge values. Afterwards, regression algorithm can be chosen from `Local regression` or `Cubic smoothing spline`. Once those data are fulfilled, click on the `Plot` button. Therefore, steps and regression curve will be displayed from *XRing* [[3](#references)] based script.  
+Fill available boxes for thickness and intensity data or load them from a file with the stepped calibration wedge values. Afterwards, regression algorithm can be chosen from `Local regression` or `Cubic smoothing spline`. Once those data are fulfilled, click on the `Plot` button. Therefore, steps and regression curve will be displayed from *XRing* [[3](#references)] based script.  
 
 <p align="center">
   <img src="screenshots/img_03.png">
@@ -39,7 +39,7 @@ Fill available thickness and intensity boxes or load it from a file from your co
 ### Density Analysis
 
 **Entry Sample Info**  
-Complete Sample ID, Year of obtention. DPI and Sample thickness are required to obtain comparative values of ring width and density among different samples.  
+Complete Sample ID, Year of obtention, DPI and Sample thickness are required to obtain comparative values of ring width and density among different samples.  
 At *Path Info* box, you can select the desired path mode (pay attention to ring detection requirements) and number of pixels to extract density profile.
 
 <p align="center">
@@ -48,11 +48,11 @@ At *Path Info* box, you can select the desired path mode (pay attention to ring 
 
 
 **Path Creation**  
-In the *Main Window*, firstly select path limits by double-left-clicking on the left side (recent years) of the sample to place the beginning of the segment. Then, continue delimiting path segments across the sample perpendicularly to ring limits. If you need to zoom in/out the sample, you can use the corresponding bars placed behind an on the left of the working window.
+In the *Main Window*, firstly select path limits by double-left-clicking on the left side (recent years) of the sample to place the beginning of the segment. Then, continue delimiting path segments across the sample perpendicularly to ring limits. If you need to zoom in/out the sample, you can use the zooming bars adjacent to the working window.
 Path width for density extraction can be changed throughout the entire analysis. 
 
 **Ring Detection and Editing**  
-Once the desired path is set, confirm the ring selection method options at *Detection Options* box and click on `Run Detection for Years`.
+Once the desired path is set, confirm the ring selection method options at *Detection Options* box and click on `Run Detection for Years`. You can try different detection methods and path width to increase autodetection accuracy for your sample.
 If, unfortunately, automatic ring detection did not work properly, you can modify ring borders on `Ring Editing` mode. One click on the desired ring border set a new border, while you can select one or multiple ring borders by clicking and dragging to delete them by clicking on `Delete Border`.
 
 **Earlywood/Latewood Detection and Editing**  
