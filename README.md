@@ -2,6 +2,8 @@
 ## What is ρ-MtreeRing?
 ρ-MtreeRing [[1](#references)] is a Free Open Source Software under [GLP-3 license](https://cran.r-project.org/web/licenses/GPL-3) for tree rings microdensity analysis on Shiny based on MtreeRing [[2](#references)].
 
+If you use this software, *please cite*: García-Hidalgo, M.; García-Pedrero, Á.M.; Caetano-Sánchez, C.; Gómez-España, M.; Lillo-Saavedra, M.; Olano, J.M. ρ-MtreeRing: A Graphical User Interface for X-ray Microdensity Analysis. Forests 2021, 12, 1405. https://doi.org/10.3390/f12101405
+
 ## Installing ρ-MtreeRing
 Download **app.R** file on your computer and launch it on R console or RStudio. 
 
@@ -84,9 +86,11 @@ Analysed measures can be exported on various formats:
 
 ## References
 
-[1] M. Garcia-Hidalgo, A. Garcia-Pedrero, C. Caetano-Sánchez, M. Gomez-España, M. Lillo-Saavedra, J.M. Olano.
-"ρ-MtreeRing: A graphical user interface for X-ray microdensity analysis". 
-Submitted.
+[1] García-Hidalgo, Miguel, Ángel M. García-Pedrero, Cristina Caetano-Sánchez, Marcos Gómez-España, Mario Lillo-Saavedra, and José M. Olano 2021.
+"ρ-MtreeRing: A Graphical User Interface for X-ray Microdensity Analysis"
+Forests 12,
+no. 10: 1405.
+https://doi.org/10.3390/f12101405
 
 [2] Jingning Shi, Wei Xiang, Qijing Liu, Sher Shah.
 "MtreeRing: An R package with graphical user interface for automatic measurement of tree ring widths using image processing techniques".
